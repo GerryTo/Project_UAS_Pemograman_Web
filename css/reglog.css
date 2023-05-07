@@ -1,0 +1,52 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/*Form*/
+.container-reglog {
+    width: 100%;  
+    min-height: 754px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background: #d6d6d6;*/
+    background-image: linear-gradient(to bottom left, #efefef, #dab6b6);
+}
+
+.wrapper-reglog {
+    background: white;
+    width: 800px;
+    border-radius: 8px;
+    padding: 30px 95px 30px 90px;
+}
+
+
+.reglog-title {
+    display: block;
+    padding-bottom: 10px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 1000;
+}
+
+.reglog-link {
+    cursor: pointer !important;
+    font-style: italic;
+}
+
+.btn-reglog {
+    background: #252425;
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 15px;
+}
+
+.btn-reglog:hover {
+    background: #dab6b6;
+}
+
+.btnsize-reglog {
+    padding: 12px 15px 13px 15px;
+    line-height: 20px;
+}

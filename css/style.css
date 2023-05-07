@@ -1,0 +1,190 @@
+body {
+    background: #f1f1f1;
+}
+
+/* sidebar */
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh; /* Untuk menyesuaikan tinggi sidebar dengan page */
+    background: #f1f1f1;
+    color: #5d5d5d;
+    transition: all 0.3s;
+}
+
+#sidebar .sb-header {
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    margin-left: 10px;
+    background: #f1f1f1;
+}
+
+/* sidebar Menu */
+#sidebar ul li a {
+    padding: 10px;
+    padding-left: 25px;
+    font-size: 17.5px;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #0d0d0d;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #0d0d0d;
+}
+
+ul ul a {
+    font-size: 15px !important;
+    padding-left: 35px !important;
+}
+
+/* sidebar Collapse */
+#sidebar.active {
+    margin-left: -250px;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+/* Content */
+#article {
+    margin-left: 50px;
+    
+}
+
+.navback {
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 17.6px;
+    font-weight: 300;
+    line-height: 27.2px;
+    color: #686868;
+}
+
+#content {
+    width: 100%;
+    padding: 20px;
+    margin-right: 50px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+/* home hover image */
+.hover {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 65%;
+}
+  
+.hoverlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.hstyle img {
+    width: 107%;
+    position: absolute;
+    top: 0;
+    left: -6%;
+    transition: all 0.5s;
+}
+  
+.hcontent {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    transition: all 0.5s;
+}
+  
+.hstyle .hoverlay {
+    background: #0000006b;
+  }
+  
+.hdesc {
+    color: #f1f1f1;
+    font-weight: 500;
+    transition: all 0.5s;
+    opacity: 0;
+}
+  
+.hstyle:hover .hcontent {
+    bottom: 17px;
+}
+  
+.hstyle:hover .hdesc {
+    opacity: 1;
+    background: #1d1d1d6b;
+    transform: none;
+}
+  
+.hstyle:hover img {
+    left: 0;
+}
+
+.hstyle:hover .hoverlay {
+    opacity: 0;
+}
+
+/* talks */
+.date {
+    font-size: 13px;
+}
+
+/*about us*/
+.space-us{
+    margin-bottom: 80px;
+}
+.smed i{
+    padding: 10px;
+    font-size: 20px;
+}
+.font{
+    font-size: 15px;
+}
+.smed i:hover{
+    opacity: 0.7;
+}
+
+/*contact us*/
+.title-us{
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+textarea{
+    resize: none;
+}
+.button-us{
+    margin-top: 10px;
+    background-color: #c2c2c2;
+    color: white;
+}

@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: whitesmoke;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+a {
+    text-decoration: none;
+  }
+
+/*navbar*/
+header {
+    background: #464547;
+    height: 65px;
+}
+
+header .logo {
+    float: left;
+    height: inherit;
+    margin-left: 16px;
+}
+
+header .logo-text {
+    margin: 5px;
+}
+
+header ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+header ul li {
+    float: left;
+    position: relative;
+}
+
+header ul li ul {
+    position: absolute;
+    top: 65px;
+    right: 0px;
+    width: 202.5px;
+    display: none;
+}
+
+header ul li:hover ul {
+    display: block;
+}
+
+header ul li ul li {
+    width: 100%;
+}
+
+header ul li ul li a {
+    padding: 15px;
+    background: #464547;
+}
+
+header ul li ul li a:hover {
+    background: #2f2e30;
+}
+
+header ul li a {
+    display: block;
+    padding: 21px;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    background: #2f2e30;
+    transition: 0.3s;
+}
+
+header .menu-toggle {
+    display: none;
+}
+
+header * {
+    color: whitesmoke;
+}
+
+/*media*/
+@media only screen and (max-width: 750px) {
+    header {
+        position: relative;
+    }
+    header ul {
+        width: 100%;
+        max-height: 0px;
+        background: #7c7a7e;
+        overflow: hidden;
+    }
+    .showing {
+        max-height: 100em;
+    }
+    header ul li {
+        width: 100%;
+    }
+    header ul li ul {
+        position: static;
+        display: block;
+        width: 100%;
+    }   
+    header ul li ul li a {
+        padding: 15px;
+        background: #464547;
+        padding-left: 50px;
+    }
+    header ul li ul li a:hover {
+        background: #2f2e30;
+    }
+    header .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 1.5em;
+    }
+}
